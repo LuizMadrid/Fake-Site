@@ -1,0 +1,324 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Começo da estilização da navegação */
+
+.navbar {
+  height: 6.25rem;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  flex: 20%;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 1.5625rem;
+}
+
+.Logo h1 {
+  color: #180f4a;
+  font-family: "Lobster", cursive;
+}
+
+.Menu {
+  flex: 70%;
+  font-size: 1.25rem;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.Menu li {
+  list-style: none;
+}
+
+.Menu a {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.Menu a:hover {
+  color: #ff2978;
+  border-top: 0.25rem solid #180f4a;
+}
+
+#bt-contato {
+  background-color: #180f4a;
+  padding: 0.625rem 1.5625rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+#bt-contato:hover {
+  background-color: #ff2978;
+  border-top: none;
+}
+
+/* Final da estilização da navegação */
+
+/* Começo da estilização do cabeçario */
+
+.cabecalho {
+  height: auto;
+  background-color: white;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6.25rem;
+}
+
+.headline {
+  flex: 30%;
+  margin-left: 10%;
+}
+
+.headline h2 {
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: #180f4a;
+}
+
+.headline p {
+  padding-top: 1.5625rem;
+  color: grey;
+  text-indent: 2.1875rem;
+  text-align: justify;
+}
+
+.contact-bt {
+  display: inline-block;
+  background-color: #ff2978;
+  padding: 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0.4375rem;
+}
+
+.contact-bt:hover {
+  background-color: #180f4a;
+}
+
+.headline a {
+  margin-top: 1.5625rem;
+  text-decoration: none;
+}
+
+.img-headline {
+  flex: 40%;
+  margin-right: 10%;
+  text-align: right;
+  /* border: 1px solid #ff2978; */
+}
+
+.img-headline img {
+  padding-top: 0px;
+  width: 53.125rem;
+}
+/* Final da estilização do cabeçario */
+
+/* Começo da estilização da sessão */
+
+section {
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin-top: 5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 3.125rem;
+  margin: 0px;
+  font-family: "Lobster", cursive;
+  font-weight: 900;
+  color: #180f4a;
+}
+
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid #ff2978;
+  border-radius: 10px;
+  width: 30%;
+  margin: 1%;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.text-hover {
+  display: none;
+}
+
+.card i {
+  color: #ff2978;
+  font-size: 3.125rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+}
+
+.card p {
+  text-align: justify;
+  text-indent: 2.1875rem;
+  padding-top: 1.5625rem;
+}
+
+.card:hover {
+  background-image: linear-gradient(180deg, #f193b6, #a71c4f, #4b0d23);
+  /* background-color: #ff2978; */
+  color: white;
+  /* padding: 40px; */
+  transform: scale(1.1);
+}
+
+.card:hover .card-text {
+  display: none;
+}
+
+.card:hover i {
+  color: white;
+}
+
+.card:hover .text-hover {
+  display: block;
+}
+
+/* Final da estilização da sessão */
+
+/* Começo da estilização do rodapé */
+
+footer {
+  margin-top: 6.25rem;
+  height: 370px;
+  background-image: linear-gradient(180deg, #2f256b, #1f125f, black);
+
+  text-align: center;
+  border-top: 0.3125rem solid #ff2978;
+}
+
+.logo-rodape {
+  color: white;
+  padding-top: 8.125rem;
+  font-family: "Lobster", cursive;
+  font-size: 1.875rem;
+}
+
+.logo-rodape p {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  padding-top: 6.25rem;
+}
+
+.logo-rodape a {
+  color: #ff2978;
+  text-decoration: none;
+}
+
+/* Final da estilização do rodapé */
+
+/* Fazendo a responsividade */
+
+@media screen and (max-width: 1700px) {
+  .headline p {
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .navbar {
+    position: relative;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .Logo {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .cabecalho {
+    padding-top: 0px;
+  }
+
+  .headline p {
+    padding-right: 10%;
+  }
+
+  .card {
+    width: 80%;
+    margin: 30px;
+  }
+
+  .md-bk {
+    padding-top: 22px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .img-headline img {
+    width: 43.75rem;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .md-bk {
+    padding-top: 0px;
+  }
+
+  .img-headline img {
+    width: 37.5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .headline h2 {
+    font-size: 16px;
+  }
+
+  .img-headline img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .img-headline img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .img-headline img {
+    width: 350px;
+  }
+}
